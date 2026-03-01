@@ -1,3 +1,13 @@
+
+// Base path support (GitHub Pages project site vs local)
+const BASE_PATH = (() => {
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  if (window.location.hostname.endsWith('github.io') && parts.length >= 1) {
+    return '/' + parts[0] + '/';
+  }
+  return '/';
+})();
+const withBase = (p) => (p.startsWith('http') ? p : (p.startsWith('/') ? (BASE_PATH.replace(/\/$/,'') + p) : (BASE_PATH + p)));
 // SERRAS — Site test v2 (i18n + motion + form + chatbot placeholder)
 (async function(){
   const toggle = document.querySelector('.nav-toggle');
