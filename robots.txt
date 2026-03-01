@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://renovations.constructionserras.com/sitemap.xml

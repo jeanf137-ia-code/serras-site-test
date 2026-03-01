@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soumission — Construction Serras Inc.</title>
+  <meta name="description" content="Formulaire structuré (démo) pour capter un max d'info: type, budget, échéancier, contraintes, photos. Prêt à connecter à BATISCOPE." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://renovations.constructionserras.com/pages/soumission.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Soumission — Construction Serras Inc." />
+  <meta property="og:description" content="Formulaire structuré (démo) pour capter un max d'info: type, budget, échéancier, contraintes, photos. Prêt à connecter à BATISCOPE." />
+  <meta property="og:url" content="https://renovations.constructionserras.com/pages/soumission.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1600&q=70" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#070a10" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Construction Serras Inc.", "url": "https://renovations.constructionserras.com/pages/soumission.html", "areaServed": ["Longueuil", "Brossard", "Saint‑Hubert", "Boucherville", "Rive‑Sud (Grand Montréal)"], "address": {"@type": "PostalAddress", "streetAddress": "2750 chemin du lac, local A", "addressLocality": "Longueuil", "addressRegion": "QC", "postalCode": "J4N 1B8", "addressCountry": "CA"}, "telephone": "+1-000-000-0000", "image": "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1600&q=70", "description": "Formulaire structuré (démo) pour capter un max d'info: type, budget, échéancier, contraintes, photos. Prêt à connecter à BATISCOPE."}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/"><span class="brand-mark">S</span><span class="brand-name">Construction Serras Inc.</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="/pages/services.html" data-i18n="nav_services">Services</a>
+      <a href="/pages/processus.html" data-i18n="nav_process">Processus</a>
+      <a href="/pages/projets.html" data-i18n="nav_projects">Projets</a>
+      <a href="/pages/a-propos.html" data-i18n="nav_about">À propos</a>
+      <a href="/pages/soumission.html" class="btn small" data-i18n="nav_quote">Soumission</a>
+      <button class="lang" type="button" data-lang-toggle title="FR/EN">
+        <small data-i18n="lang_label">FR/EN</small> ↔
+      </button>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="section slim">
+    <div class="container">
+      <p class="kicker">Soumission</p>
+      <h1 style="margin:0 0 10px; font-size:clamp(1.8rem,1.2rem+1.5vw,2.6rem)">Formulaire rapide, mais intelligent</h1>
+      <p class="lead">But: avoir les bonnes infos dès le départ. Ensuite, on branche l’API vers BATISCOPE/Soumission.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="form reveal" id="leadForm">
+        <div class="section-head" style="margin-bottom:12px">
+          <h2 style="margin:0">Coordonnées</h2>
+          <p>Démo locale. En prod: anti‑spam, politique, consentements.</p>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="full_name">Nom complet *</label>
+            <input id="full_name" name="full_name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Courriel *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="phone">Téléphone *</label>
+            <input id="phone" name="phone" required autocomplete="tel" />
+          </div>
+          <div class="field">
+            <label for="city">Ville *</label>
+            <select id="city" name="city" required>
+              <option value="" selected disabled>Choisir…</option>
+              <option value="longueuil">Longueuil</option><option value="brossard">Brossard</option><option value="saint-hubert">Saint‑Hubert</option><option value="boucherville">Boucherville</option><option value="rive-sud">Rive‑Sud (Grand Montréal)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="section-head" style="margin-bottom:12px">
+          <h2 style="margin:0">Projet</h2>
+          <p>On qualifie pour protéger qualité, délais, et communication.</p>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="project_type">Type *</label>
+            <select id="project_type" name="project_type" required>
+              <option value="" selected disabled>Choisir…</option>
+              <option value="residential">Résidentiel</option>
+              <option value="commercial">Commercial privé</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="service">Service principal *</label>
+            <select id="service" name="service" required>
+              <option value="" selected disabled>Choisir…</option>
+              <option value="salle-de-bain">Salle de bain</option><option value="sous-sol">Sous-sol</option><option value="agrandissement">Agrandissement</option><option value="deck">Deck / Terrasse</option><option value="cuisine">Cuisine</option><option value="garage">Garage</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="budget">Budget estimé *</label>
+            <select id="budget" name="budget" required>
+              <option value="" selected disabled>Choisir…</option>
+              <option value="under-50">&lt; 50k</option>
+              <option value="50-100">50k–100k</option>
+              <option value="100-250">100k–250k</option>
+              <option value="250-500">250k–500k</option>
+              <option value="500-750">500k–750k</option>
+              <option value="750+">750k+</option>
+            </select>
+            <div class="hint">Notre cœur typique est 100k–750k, mais on évalue au cas par cas.</div>
+          </div>
+          <div class="field">
+            <label for="timeline">Échéancier *</label>
+            <select id="timeline" name="timeline" required>
+              <option value="" selected disabled>Choisir…</option>
+              <option value="urgent">&lt; 30 jours</option>
+              <option value="1-3">1–3 mois</option>
+              <option value="3-6">3–6 mois</option>
+              <option value="6+">6 mois +</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="address">Adresse du chantier *</label>
+          <input id="address" name="address" required placeholder="Adresse complète" />
+        </div>
+
+        <div class="field">
+          <label for="scope">Description courte *</label>
+          <textarea id="scope" name="scope" required rows="5" placeholder="Portée, objectifs, contraintes, milieu occupé, accès, stationnement, etc."></textarea>
+        </div>
+
+        <div class="row3">
+          <div class="field">
+            <label for="occupied">Milieu occupé?</label>
+            <select id="occupied" name="occupied">
+              <option value="" selected>—</option>
+              <option value="yes">Oui</option>
+              <option value="no">Non</option>
+              <option value="partial">Partiellement</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="parking">Accès / stationnement</label>
+            <select id="parking" name="parking">
+              <option value="" selected>—</option>
+              <option value="easy">Facile</option>
+              <option value="medium">Moyen</option>
+              <option value="hard">Difficile</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="plans">Plans / permis</label>
+            <select id="plans" name="plans">
+              <option value="" selected>—</option>
+              <option value="plans">Plans disponibles</option>
+              <option value="none">Aucun plan</option>
+              <option value="need">À obtenir</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="card" data-section="residential" style="display:none; margin-bottom:12px">
+          <h3>Bloc Résidentiel</h3>
+          <div class="row">
+            <div class="field">
+              <label for="res_year">Année de construction (approx.)</label>
+              <input id="res_year" name="res_year" inputmode="numeric" placeholder="ex: 1998" />
+            </div>
+            <div class="field">
+              <label for="res_notes">Contraintes spécifiques</label>
+              <input id="res_notes" name="res_notes" placeholder="ex: enfants, horaires, poussière, animaux…" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-section="commercial" style="display:none; margin-bottom:12px">
+          <h3>Bloc Commercial privé</h3>
+          <div class="row">
+            <div class="field">
+              <label for="com_sector">Secteur</label>
+              <input id="com_sector" name="com_sector" placeholder="ex: bureau, commerce, resto…" />
+            </div>
+            <div class="field">
+              <label for="com_hours">Contraintes horaires</label>
+              <input id="com_hours" name="com_hours" placeholder="ex: soir/weekend, fenêtres de travail…" />
+            </div>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin: 10px 0 10px">
+          <h2 style="margin:0">Photos / documents</h2>
+          <p>Démo locale. En prod: upload sécurisé + mapping BATISCOPE.</p>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="files">Photos / plans (démo)</label>
+            <input id="files" name="files" type="file" multiple />
+            <div class="hint">En prod: limites taille + types + scan.</div>
+          </div>
+          <div class="field">
+            <label for="preferred">Préférence contact</label>
+            <select id="preferred" name="preferred">
+              <option value="" selected>—</option>
+              <option value="phone">Téléphone</option>
+              <option value="email">Courriel</option>
+              <option value="text">Texto</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label><input type="checkbox" name="consent" required /> J’accepte d’être contacté pour le suivi de ma demande *</label>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Envoyer</button>
+          <a class="btn ghost" href="/">Retour accueil</a>
+        </div>
+
+        <div class="notice" id="formNotice"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Construction Serras Inc.</strong><br/>
+      <span class="small">2750 chemin du lac, local A, Longueuil (QC), J4N 1B8</span>
+      <div class="hr"></div>
+      <div class="small" data-i18n="footer_small">© 2026 • Site test local • Construction Serras Inc.</div>
+    </div>
+    <div class="small">
+      <div><a href="/pages/soumission.html" data-i18n="nav_quote">Soumission</a></div>
+      <div><a href="/pages/services.html" data-i18n="nav_services">Services</a></div>
+      <div><a href="/pages/projets.html" data-i18n="nav_projects">Projets</a></div>
+      <div><a href="/pages/villes.html">Villes</a></div>
+      <div><a href="/sitemap.xml">Sitemap</a> • <a href="/robots.txt">Robots</a></div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="chatbot" aria-label="Chatbot IA">
+  <div class="launcher">
+    <button type="button" data-chat-launch title="Ouvrir le chatbot">IA</button>
+  </div>
+  <div class="panel" role="dialog" aria-label="Assistant IA">
+    <div class="head">
+      <strong data-i18n="chat_title">Assistant IA Serras (démo)</strong>
+      <button class="btn small ghost" type="button" data-chat-close>Fermer</button>
+    </div>
+    <div class="body">
+      <p data-i18n="chat_body">Placeholder: branchez ici votre chatbot local (iframe/script/API).</p>
+      <code>
+Option A: iframe widget
+Option B: script provider
+Option C: appel API /chat
+      </code>
+      <p class="small" data-i18n="chat_hint">Objectif: qualifier le projet et guider vers la soumission.</p>
+    </div>
+  </div>
+</div>
+
+<script src="/script.js" defer></script>
+</body>
+</html>
